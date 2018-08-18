@@ -1,0 +1,10 @@
+{% extends "bank/base.html" %}
+{% block content %}
+<div> We are at your service</div>
+<a href="/bank/create_account/">New Applicant</a>
+<form method='post' action="">
+{{ homeform }}
+<input type='submit' name='SUBMIT'>
+<input type='clear' name='CANCEl'>
+</form>
+{% endblock %}

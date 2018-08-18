@@ -1,0 +1,10 @@
+<a href='/bank'>Bank</a>
+{% if logged_in %}
+    <p>You are already logged in</p>
+    <a href="/reg/logout'>logout</a>
+{% else %}
+    <form action="." method="post">
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+    </form>
+{% endif %}

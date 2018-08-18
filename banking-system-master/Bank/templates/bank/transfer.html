@@ -1,0 +1,9 @@
+{% extends "bank/base.html" %}
+{% block content %}
+<a href= "/bank/transfer"></a>
+<div>Transfer Form:</div>
+    <form method='post' action="">
+        {{ form.as_p }}
+        <input type='submit' name='SUBMIT'>
+</form>
+{% endblock %}
